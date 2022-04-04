@@ -8,6 +8,7 @@ function myFunction() {
     var health = document.getElementById('health').value;
     var age = document.getElementById('age').value;
     var Location = document.getElementById('city').value;
+    var Village = document.getElementById('village').value;
     var gender = document.getElementById('gender').value;
 
     // let health = prompt("Enter Your Health 'Good or Poor'", "guest")
@@ -30,17 +31,17 @@ function myFunction() {
 
     }
 
-    else if (health == "Good" && age > 18 && Location == "Village" && gender == "Male") {
+    else if (health == "Good" && age > 18 && Village == "Village" && gender == "Male") {
 
-        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Location} "<br>" Gender: ${gender}`)
+        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Village} "<br>" Gender: ${gender}`)
 
         document.write("<br>","Your Health Policy is 31 Lakh Rupees '<br>'")
         document.write("To Apply This Policy Please Contact Us =>  7485962547")
 
     }
-    else if (health == "Poor" && age > 18 && Location == "Village" && gender == "Male") {
+    else if (health == "Poor" && age > 18 && Village == "Village" && gender == "Male") {
 
-        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Location} "<br>" Gender: ${gender}`)
+        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Village} "<br>" Gender: ${gender}`)
 
         document.write("<br>","Your Health Policy is 28 Lakh Rupees '<br>'")
         document.write("To Apply This Policy Please Contact Us =>  7485962547")
@@ -63,17 +64,17 @@ function myFunction() {
 
     }
 
-    else if (health == "Good" && age > 18 && Location == "Village" && gender == "Female") {
+    else if (health == "Good" && age > 18 && Village == "Village" && gender == "Female") {
 
-        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Location} "<br>" Gender: ${gender}`)
+        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Village} "<br>" Gender: ${gender}`)
 
         document.write("<br>","Your Health Policy is 30 Lakh Rupees '<br>'")
         document.write("To Apply This Policy Please Contact Us =>  7485962547")
 
     }
-    else if (health == "Poor" && age > 18 && Location == "Village" && gender == "Female") {
+    else if (health == "Poor" && age > 18 && Village == "Village" && gender == "Female") {
 
-        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Location} "<br>" Gender: ${gender}`)
+        document.write(`Your health is ${health} "<br>" Your Age is ${age} "<br>" Live in ${Village} "<br>" Gender: ${gender}`)
 
         document.write("<br>","Your Health Policy is 28 Lakh Rupees '<br>'")
         document.write("To Apply This Policy Please Contact Us =>  7485962547")
