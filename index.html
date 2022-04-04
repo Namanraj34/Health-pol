@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Health Policy</title>
+</head>
+<style>
+
+    body{
+    background: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?w=900&t=st=1649058667~exp=1649059267~hmac=5b03e33…);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .heading {
+        padding-bottom: 10px;
+    }
+
+    .form1 {
+        margin-top: 50px;
+        box-shadow: 1px 1px 4px 0px;
+        padding: 28px;
+        background:  linear-gradient(34deg, rgba(175,189,200,1) 0%, rgba(223,223,223,1) 100%, rgba(135,160,166,1) 100%);
+        border-radius: 10px;
+    }
+
+    .btn {
+        padding: 8px 45px 8px;
+        margin-top: 19px;
+        color: #fff;
+        background-color: #67736d;
+        border: 0px;
+    }
+    
+    .btn:hover{
+        background:rgb(179 192 202);
+    }
+</style>
+
+<body>
+    <div class="container">
+
+
+        <form class="form1" onsubmit="SendEmail(); reset(); return false;">
+            <h2 class="text-center heading">Health Policy</h2>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter Your Health </label>
+
+                <input type="text" id="health" placeholder="Good or Poor" aria-describedby="emailHelp" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="exampleInputEmail1" class="form-label">Enter Your Age </label>
+
+                <input type="number" id="age" placeholder="Enter Your Age !" aria-describedby="emailHelp" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="exampleInputEmail1" class="form-label">Enter Your Location </label>
+
+                <input type="text" id="city" placeholder="City or Village" aria-describedby="emailHelp" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="exampleInputEmail1" class="form-label">Enter Your Gender: </label>
+
+                <input type="text" id="gender" placeholder="Male or Female" aria-describedby="emailHelp" class="form-control">
+
+                <button class="btn" onclick="myFunction()">Submit</button>
+
+            </div>
+
+
+    </form>
+    <!-- <form class="form1">
+            <label for="">Enter Your Health 'Good or Poor'</label>
+            <input type="text" id="health" placeholder="'Good or Poor'">
+            <label for="">Enter Your Health 'Good or Poor'</label>
+            <input type="text" id="age" placeholder="Enter Your Age !">
+            <label for="">Enter Your Health 'Good or Poor'</label>
+            <input type="text" id="city" placeholder="Enter your Location">
+            <label for="">Enter Your Health 'Good or Poor'</label>
+            <input type="text" id="gender" placeholder="Enter Gnder">
+            <button class="btn" onclick="myFunction()">ClicK me</button>
+        </form> -->
+    </div>
+    <script src="button-fun.js">
+    </script>
+
+    <script>
+
+        function ron() {
+            var str = document.getElementById('text1').value;
+            document.write('Value inside the text box ' + " " + str)
+        }
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function SendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "namanraj34@gmail.com",
+                Password: "Naman@121",
+                To: 'nakshraj1997@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Form of Health Polcy",
+                Body: "Health:" + document.getElementById('health').value
+                + "<br> Age:" + document.getElementById('age').value
+                + "<br> City:" + document.getElementById('city').value
+                + "<br> Gender:" + document.getElementById('gender').value
+            }).then(
+                message => alert("Message send successfully")
+            );
+        }
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
