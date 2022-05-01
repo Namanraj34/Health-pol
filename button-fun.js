@@ -90,15 +90,15 @@ function myFunction() {
 
 
 
-function myFunction(e){
-    e.preventDefault();
+// function myFunction(e){
+//     e.preventDefault();
 
-    if(
-        health.value.trim() === "" || 
-        age.value.trim() === "" ||
-        gender.value.trim() === ""
+//     if(
+//         health.value.trim() === "" || 
+//         age.value.trim() === "" ||
+//         gender.value.trim() === ""
 
-    ){
-        alert("Please Enter Text and Value");
-    }
-}
+//     ){
+//         alert("Please Enter Text and Value");
+//     }
+// }
